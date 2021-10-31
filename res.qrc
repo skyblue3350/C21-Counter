@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="/">
+    <file>res/photo.png</file>
+    <file>res/tools.png</file>
+    <file>res/gatya.png</file>
+    <file>res/battle.png</file>
+    <file>res/dungeon.png</file>
+    <file>res/help.png</file>
+    <file>res/item.png</file>
+    <file>res/labo.png</file>
+    <file>res/mission_1.png</file>
+    <file>res/mission_2.png</file>
+    <file>res/other.png</file>
+    <file>res/page.png</file>
+    <file>res/parts.png</file>
+    <file>res/quit.png</file>
+    <file>res/search.png</file>
+  </qresource>
+</RCC>

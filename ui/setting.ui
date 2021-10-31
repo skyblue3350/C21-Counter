@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingForm</class>
+ <widget class="QWidget" name="SettingForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>433</width>
+    <height>145</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>433</width>
+    <height>145</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>433</width>
+    <height>145</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>設定</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="2">
+    <widget class="QSpinBox" name="Spin_update">
+     <property name="minimum">
+      <number>30</number>
+     </property>
+     <property name="maximum">
+      <number>180</number>
+     </property>
+     <property name="singleStep">
+      <number>5</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="Label_logpath">
+     <property name="text">
+      <string>ログファイルパス　：　</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" colspan="4">
+    <widget class="QLineEdit" name="Line_path"/>
+   </item>
+   <item row="5" column="4">
+    <widget class="QPushButton" name="Button_save">
+     <property name="text">
+      <string>保存</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QLabel" name="Label_end">
+     <property name="text">
+      <string>まで</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLabel" name="Label_second">
+     <property name="text">
+      <string>秒ごと</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="Label_update">
+     <property name="text">
+      <string>自動更新　：　</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="QPushButton" name="Button_cancel">
+     <property name="text">
+      <string>キャンセル</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QComboBox" name="Box_start"/>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="Label_from">
+     <property name="text">
+      <string>から</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QComboBox" name="Box_end"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QComboBox" name="Box_select">
+     <item>
+      <property name="text">
+       <string>すべて</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>今日</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>特定の１日</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>特定の期間</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="Label_log">
+     <property name="text">
+      <string>対象ログファイル　：　</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="Button_reset">
+     <property name="text">
+      <string>初期設定</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>Box_select</tabstop>
+  <tabstop>Box_start</tabstop>
+  <tabstop>Box_end</tabstop>
+  <tabstop>Spin_update</tabstop>
+  <tabstop>Line_path</tabstop>
+  <tabstop>Button_save</tabstop>
+  <tabstop>Button_cancel</tabstop>
+  <tabstop>Button_reset</tabstop>
+  <tabstop>Line_path</tabstop>
+  <tabstop>Box_select</tabstop>
+  <tabstop>Box_end</tabstop>
+  <tabstop>Spin_update</tabstop>
+  <tabstop>Box_start</tabstop>
+  <tabstop>Button_cancel</tabstop>
+  <tabstop>Button_save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Button_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_save</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
